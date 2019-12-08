@@ -1,0 +1,40 @@
+html {
+scroll-behavior: smooth;
+}
+#bottompanel {
+color: #fff;
+background: -webkit-linear-gradient(110deg, #7C4DFF 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: -o-linear-gradient(110deg, #7C4DFF 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: linear-gradient(70deg, #7C4DFF 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: linear-gradient(50deg, #7C4DFF 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+}
+#leftgridimgbackground {
+color: #fff;
+background: -webkit-linear-gradient(110deg, #7C4DFF 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: -o-linear-gradient(110deg, #7C4DFF 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: linear-gradient(70deg, #7C4DFF 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+background: linear-gradient(50deg, #7C4DFF 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+}
+/*navbar slide */
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+overflow-x: hidden;
+transition: 0.4s;
+padding-top: 32px;
+}
+#rightcontent {
+transition: margin-left .5s;
+padding: 16px;
+background:#ECEFF1;
+}
+/*navbar slide*/
+.scale-anm {
+transform: scale(1);
+}
