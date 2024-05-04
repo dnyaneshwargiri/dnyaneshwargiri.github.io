@@ -1,7 +1,0 @@
-User-Agent: *
-Disallow: 
-Allow: /index.html
-Allow: /projects.html
-Allow: /gallary.html
-Allow: /connect.html
-Allow: /p1gui.html
