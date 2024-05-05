@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { SidemenuComponent } from './components/sidemenu/sidemenu.component';
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { SidemenuComponent } from "./components/sidemenu/sidemenu.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, SidemenuComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  imports: [RouterOutlet, SidemenuComponent, FooterComponent],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  title = 'dnyaneshwargiri.github.io';
+  title = "dnyaneshwargiri.github.io";
 }

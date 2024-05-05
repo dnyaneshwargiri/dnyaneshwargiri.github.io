@@ -1,4 +1,4 @@
 node_modules
 .Ds_Store
 dist
-.angular-cache
+.angular
