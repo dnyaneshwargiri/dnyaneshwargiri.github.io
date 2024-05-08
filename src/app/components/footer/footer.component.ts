@@ -30,6 +30,16 @@ export class FooterComponent implements OnInit {
         value: "https://github.com/dnyaneshwargiri",
         svgIcon: "../../../assets/svg/social/github.svg",
       },
+      {
+        key: "quora",
+        value: "https://www.quora.com/profile/Dnyaneshwar-Giri-3",
+        svgIcon: "../../../assets/svg/social/quora.svg",
+      },
+      {
+        key: "medium",
+        value: "https://medium.com/@dnyaneshwargiri510",
+        svgIcon: "../../../assets/svg/social/medium.svg",
+      },
     ],
     contact: {
       address: "Dusseldörf, Germany",

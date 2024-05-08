@@ -17,7 +17,7 @@
         <button
           type="button"
           (click)="toggleMenu()"
-          class="hs-collapse-toggle inline-flex items-center justify-center gap-x-2 disabled:pointer-events-none"
+          class="hs-collapse-toggle mr-4 inline-flex items-center justify-center gap-x-2 disabled:pointer-events-none"
           data-hs-collapse="#navbar-image-2"
           aria-controls="navbar-image-2"
           aria-label="Toggle navigation"
@@ -45,11 +45,11 @@
       class="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 sm:block"
     >
       <div
-        class="mt-5 flex flex-col gap-5 sm:mt-0 sm:flex-row sm:items-end sm:justify-end sm:ps-5 sm:text-right"
+        class="mt-5 flex flex-col gap-5 sm:mt-0 sm:flex-row sm:items-end sm:justify-end sm:ps-5"
       >
         <a
           *ngFor="let option of menuOptions"
-          class="inline-flex gap-1 font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
+          class="mr-4 inline-flex justify-end gap-1 font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
           href="#"
         >
           {{ option.value }}

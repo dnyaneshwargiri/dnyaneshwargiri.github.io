@@ -3,30 +3,25 @@ import { Component, OnInit } from "@angular/core";
 import { MenuOptions } from "../../types/models";
 
 @Component({
-  selector: "sidemenu",
+  selector: "navigation-menu",
   imports: [CommonModule],
-  templateUrl: "./sidemenu.component.html",
-  styleUrls: ["./sidemenu.component.css"],
+  templateUrl: "./navigationmenu.component.html",
+  styleUrls: ["./navigationmenu.component.css"],
   standalone: true,
 })
-export class SidemenuComponent implements OnInit {
+export class NavigationMenuComponent implements OnInit {
   constructor() {}
   isMenuOpen: boolean = false;
   menuOptions: MenuOptions[] = [
     {
-      value: "Landing",
+      value: "Github",
       route: "",
-      svgSrc: "../../../assets/svg/home.svg",
+      svgSrc: ".../../../assets/svg/social/github.svg",
     },
     {
-      value: "Connect",
+      value: "Youtube",
       route: "",
-      svgSrc: "../../../assets/svg/connect.svg",
-    },
-    {
-      value: "Projects",
-      route: "",
-      svgSrc: "../../../assets/svg/projects.svg",
+      svgSrc: "../../../assets/svg/social/youtube.svg",
     },
     {
       value: "Gallery",
@@ -34,12 +29,12 @@ export class SidemenuComponent implements OnInit {
       svgSrc: "../../../assets/svg/gallery.svg",
     },
     {
-      value: "Experience",
+      value: "Testimonials",
       route: "",
-      svgSrc: "../../../assets/svg/experience.svg",
+      svgSrc: "../../../assets/svg/projects.svg",
     },
     {
-      value: "Blog",
+      value: "Blogs",
       route: "",
       svgSrc: "../../../assets/svg/blog.svg",
     },

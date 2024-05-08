@@ -6,15 +6,23 @@ export type MenuOptions = {
 export type FooterData = {
   title: string;
   subTitle: string;
-  socials: socials[];
-  contact: contact;
+  socials: Socials[];
+  contact: Contact;
 };
-type contact = {
+type Contact = {
   address: string;
   linkedIn: string;
 };
-type socials = {
+type Socials = {
   key: string;
   value: string;
   svgIcon: string;
+};
+export type Experience = {
+  jobRole: string;
+  tenure: string;
+  company: string;
+  location: string;
+  jobDescription: string;
+  media?: unknown;
 };
