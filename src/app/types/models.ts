@@ -8,6 +8,9 @@ export type FooterData = {
   subTitle: string;
   socials: Socials[];
   contact: Contact;
+  additionalText : string;
+  portfolioText:string;
+  portfolioGithubLink:string;
 };
 type Contact = {
   address: string;
@@ -25,4 +28,10 @@ export type Experience = {
   location: string;
   jobDescription: string;
   media?: unknown;
+};
+export type Testimonial = {
+  message: string;
+  personName: string;
+  personDesignation: string;
+  imageUrl: string;
 };

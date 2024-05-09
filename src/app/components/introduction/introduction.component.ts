@@ -11,6 +11,8 @@ export class IntroductionComponent implements OnInit {
   title = "Hi I'm Dnyaneshwar";
   introParagraph =
     "Software Engineer by Profession who belives in law of Procastination ;) Looking at my experience I've done quite a lot work in Web Development especially Frontend Stuff but I belive in theory of being Universal Developer (slaying whatever shit comes a way). Apart I'm Pragmatic individual with never ending little drive inside me. ";
+
+  introductionSectionConnectText = "Connect with me on";
   ngOnInit() {}
 
   gotoLinkedIn() {

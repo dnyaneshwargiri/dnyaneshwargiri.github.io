@@ -14,14 +14,14 @@ export class NavigationMenuComponent implements OnInit {
   isMenuOpen: boolean = false;
   menuOptions: MenuOptions[] = [
     {
-      value: "Github",
-      route: "",
-      svgSrc: ".../../../assets/svg/social/github.svg",
-    },
-    {
       value: "Youtube",
       route: "",
       svgSrc: "../../../assets/svg/social/youtube.svg",
+    },
+    {
+      value: "Github",
+      route: "",
+      svgSrc: ".../../../assets/svg/social/github.svg",
     },
     {
       value: "Gallery",

@@ -35,7 +35,9 @@
         class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2"
       >
         <div class="text-center sm:text-left">
-          <p class="text-lg font-medium text-white">Contact Me</p>
+          <p class="text-lg font-medium text-white">
+            {{ footerData.additionalText }}
+          </p>
 
           <ul class="mt-4 space-y-4 text-sm">
             <li>
@@ -84,11 +86,11 @@
     <div class="mt-6 border-t border-gray-800 pt-6">
       <div class="text-center sm:flex sm:justify-between sm:text-left">
         <a
-          href="https://github.com/dnyaneshwargiri/dnyaneshwargiri.github.io"
+          [href]="footerData.portfolioGithubLink"
           class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0"
           target="_blank"
         >
-          Fork This Portfolio on Github
+          {{ footerData.portfolioText }}
         </a>
       </div>
     </div>

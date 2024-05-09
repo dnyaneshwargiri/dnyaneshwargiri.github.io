@@ -3,11 +3,18 @@
     class="mx-4 flex w-full flex-col items-center gap-4 md:w-auto md:max-w-3xl md:flex-row md:items-start"
   >
     <div class="overflow-x-hidden p-2">
+      <div>
+        <h2
+          class="text-center text-4xl font-bold leading-tight text-gray-800 lg:text-5xl"
+        >
+          {{ title }}
+        </h2>
+        <div class="mx-auto my-4 h-2 w-12 border-4 border-indigo-500"></div>
+      </div>
       <div class="flex pt-2 md:overflow-x-auto">
         <ol
           class="border-s border-neutral-300 md:flex md:justify-center md:gap-6 md:border-s-0 md:border-t dark:border-neutral-500"
         >
-          <!--First item-->
           <li *ngFor="let experience of experiences">
             <div
               class="flex-start flex min-w-[300px] items-center pt-2 md:block md:pt-0"

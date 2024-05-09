@@ -16,11 +16,6 @@ export class FooterComponent implements OnInit {
     subTitle: "Once at a time",
     socials: [
       {
-        key: "linkedin",
-        value: "https://www.linkedin.com/in/dnyaneshwargiri/",
-        svgIcon: "../../../assets/svg/social/linkedin.svg",
-      },
-      {
         key: "youtube",
         value: "https://www.youtube.com/@brogrammers",
         svgIcon: "../../../assets/svg/social/youtube.svg",
@@ -36,15 +31,24 @@ export class FooterComponent implements OnInit {
         svgIcon: "../../../assets/svg/social/quora.svg",
       },
       {
+        key: "pintrest",
+        value: "https://in.pinterest.com/dnyaneshwargir/",
+        svgIcon: "../../../assets/svg/social/pinterest.svg",
+      },
+      {
         key: "medium",
         value: "https://medium.com/@dnyaneshwargiri510",
         svgIcon: "../../../assets/svg/social/medium.svg",
       },
     ],
+    additionalText: "Contact me",
     contact: {
       address: "Dusseldörf, Germany",
       linkedIn: "https://www.linkedin.com/in/dnyaneshwargiri/",
     },
+    portfolioGithubLink:
+      "https://github.com/dnyaneshwargiri/dnyaneshwargiri.github.io",
+    portfolioText: "Fork This Portfolio on Github",
   };
   ngOnInit() {}
 }
