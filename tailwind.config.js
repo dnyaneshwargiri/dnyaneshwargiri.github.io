@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "dny-red": "#f66767",
+      },
+    },
   },
   plugins: [],
 };

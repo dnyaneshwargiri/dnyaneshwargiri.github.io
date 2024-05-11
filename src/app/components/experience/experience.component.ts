@@ -2,13 +2,14 @@ import { Component, OnInit } from "@angular/core";
 import { Experience } from "../../types/models";
 import { CommonModule } from "@angular/common";
 import { LinkedinService } from "../../services/linkedin.service";
+import { SectionTitleComponent } from "../widgets/section-title/section-title.component";
 
 @Component({
   selector: "experience",
   templateUrl: "./experience.component.html",
   styleUrls: ["./experience.component.css"],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SectionTitleComponent],
 })
 export class ExperienceComponent implements OnInit {
   constructor(private linkedinService: LinkedinService) {}

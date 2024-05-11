@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
   constructor() {}
   footerData: FooterData = {
     title: "Living | Working | Leveling Up",
-    subTitle: "Once at a time",
+    subTitle: "Need help? I'm available for freelancing",
     socials: [
       {
         key: "youtube",

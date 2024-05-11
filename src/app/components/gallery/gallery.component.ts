@@ -14,10 +14,14 @@ export class GalleryComponent implements OnInit {
   title = "Gallery";
 
   imagesData: string[] = [
-    "https://images.unsplash.com/photo-1665561741359-7af2d2fdc395?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400",
-    "https://images.unsplash.com/photo-1665391837905-74d250172dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400",
-    "https://images.unsplash.com/photo-1666303349374-c4cf8bc9eaaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400",
-    "https://images.unsplash.com/photo-1666303349374-c4cf8bc9eaaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400",
+    "https://source.unsplash.com/8n7ipHhI8CI",
+    "https://source.unsplash.com/IXYxqP4zejo",
+    "https://source.unsplash.com/0zq6yuNk3L8",
+    "https://source.unsplash.com/wBmWZZ7WS2U",
+    "https://source.unsplash.com/rhVeNHHNbdk",
+    "https://source.unsplash.com/Nsze2HlxoZo",
+    "https://source.unsplash.com/VhcZyymbvpA",
+    "https://source.unsplash.com/j5L0X1ioajw",
   ];
   ngOnInit() {}
 }

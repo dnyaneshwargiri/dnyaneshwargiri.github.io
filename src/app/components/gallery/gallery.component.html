@@ -2,27 +2,32 @@
   class="relative mx-auto max-w-screen-2xl bg-white px-4 py-16 md:max-w-3xl lg:py-24"
 >
   <section-title [title]="title" />
-  <div class="flex flex-col gap-2 md:flex-row">
-    <div class="flex flex-1 flex-col">
-      <div class="flex flex-1 flex-col">
-        <img
-          class="h-full object-cover"
-          src="https://images.unsplash.com/photo-1664764119004-999a3f80a1b8?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDEzMDc&ixlib=rb-4.0.3&q=80"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="flex flex-1">
-      <div class="grid grid-cols-2 gap-2">
-        <div>
-          <img
-            class="h-full object-cover"
-            src="https://images.unsplash.com/photo-1666147775717-65fa1fe0c47b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400"
-            alt=""
-          />
-        </div>
-        <div *ngFor="let image of imagesData">
-          <img class="h-full object-cover" [src]="image" alt="" />
+
+  <div
+    class="columns-1 gap-4 space-y-4 p-4 sm:columns-2 md:columns-3 lg:columns-4"
+  >
+    <div
+      *ngFor="let image of imagesData"
+      class="group relative cursor-pointer overflow-hidden rounded-md"
+    >
+      <img [src]="image" />
+      <div
+        class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+      >
+        <div
+          class="pointer-events-none absolute inset-0 bg-black opacity-30"
+        ></div>
+        <div class="absolute inset-0 flex flex-col p-8">
+          <button
+            class="mr-auto rounded-full bg-red-500 px-8 py-2 text-sm font-bold text-white"
+          >
+            Share
+          </button>
+          <div
+            class="relative z-10 mt-auto break-words text-lg font-semibold text-white"
+          >
+            loreum ipsum
+          </div>
         </div>
       </div>
     </div>
