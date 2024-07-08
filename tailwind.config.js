@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "dny-red": "#f66767",
+        "dny-purple": "#421c86",
       },
     },
   },

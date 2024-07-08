@@ -8,7 +8,13 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Regular.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: "playwrite", sans-serif;
+  font-family: "poppins", sans-serif;
+  color: #421c86;
 }
