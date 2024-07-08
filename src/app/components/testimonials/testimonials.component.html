@@ -37,10 +37,15 @@
                 <img
                   class="h-12 w-12 rounded-full border-2 border-indigo-400"
                   [src]="testimonial.imageUrl"
+                  alt="testimonial-image"
                 />
               </div>
               <div class="ml-4">
-                <div class="font-bold">{{ testimonial.personName }}</div>
+                <div class="font-bold underline">
+                  <a [href]="testimonial.linkedInUrl" target="_blank">
+                    {{ testimonial.personName }}</a
+                  >
+                </div>
                 <div class="mt-1 text-sm text-gray-600">
                   {{ testimonial.personDesignation }}
                 </div>

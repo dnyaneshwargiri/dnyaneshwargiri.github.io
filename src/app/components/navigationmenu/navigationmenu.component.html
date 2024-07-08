@@ -49,8 +49,9 @@
       >
         <a
           *ngFor="let option of menuOptions"
-          class="mr-4 inline-flex justify-end gap-1 font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
-          href="#"
+          class="mr-4 inline-flex justify-end gap-1 text-lg font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
+          [href]="option.route"
+          target="_blank"
         >
           {{ option.value }}
           <img [src]="option.svgSrc" alt="" height="20px" width="20px" />

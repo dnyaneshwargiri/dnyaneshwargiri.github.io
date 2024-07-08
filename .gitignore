@@ -2,3 +2,7 @@ node_modules
 .Ds_Store
 dist
 .angular
+.gitignore
+
+.nx/cache
+.nx/workspace-data

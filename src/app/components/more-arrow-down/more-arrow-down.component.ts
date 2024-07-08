@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, HostListener, OnInit } from "@angular/core";
+import { Component, HostListener } from "@angular/core";
 
 @Component({
   selector: "more-arrow-down",
@@ -8,8 +8,7 @@ import { Component, HostListener, OnInit } from "@angular/core";
   standalone: true,
   imports: [CommonModule],
 })
-export class MoreArrowDownComponent implements OnInit {
-  constructor() {}
+export class MoreArrowDownComponent {
   showScrollArrow: boolean = true;
 
   @HostListener("window:scroll", [])
@@ -24,5 +23,4 @@ export class MoreArrowDownComponent implements OnInit {
   scrollToBottom() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   }
-  ngOnInit() {}
 }

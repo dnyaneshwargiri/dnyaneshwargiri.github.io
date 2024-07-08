@@ -8,9 +8,9 @@ export type FooterData = {
   subTitle: string;
   socials: Socials[];
   contact: Contact;
-  additionalText : string;
-  portfolioText:string;
-  portfolioGithubLink:string;
+  additionalText: string;
+  portfolioText: string;
+  portfolioGithubLink: string;
 };
 type Contact = {
   address: string;
@@ -34,4 +34,5 @@ export type Testimonial = {
   personName: string;
   personDesignation: string;
   imageUrl: string;
+  linkedInUrl: string;
 };

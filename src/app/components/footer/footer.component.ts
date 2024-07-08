@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { FooterData } from "../../types/models";
 import { CommonModule } from "@angular/common";
 
@@ -9,11 +9,10 @@ import { CommonModule } from "@angular/common";
   imports: [CommonModule],
   standalone: true,
 })
-export class FooterComponent implements OnInit {
-  constructor() {}
+export class FooterComponent {
   footerData: FooterData = {
     title: "Living | Working | Leveling Up",
-    subTitle: "Need help? I'm available for freelancing",
+    subTitle: "Need help? I'm available :)",
     socials: [
       {
         key: "youtube",
@@ -25,21 +24,6 @@ export class FooterComponent implements OnInit {
         value: "https://github.com/dnyaneshwargiri",
         svgIcon: "../../../assets/svg/social/github.svg",
       },
-      {
-        key: "quora",
-        value: "https://www.quora.com/profile/Dnyaneshwar-Giri-3",
-        svgIcon: "../../../assets/svg/social/quora.svg",
-      },
-      {
-        key: "pintrest",
-        value: "https://in.pinterest.com/dnyaneshwargir/",
-        svgIcon: "../../../assets/svg/social/pinterest.svg",
-      },
-      {
-        key: "medium",
-        value: "https://medium.com/@dnyaneshwargiri510",
-        svgIcon: "../../../assets/svg/social/medium.svg",
-      },
     ],
     additionalText: "Contact me",
     contact: {
@@ -50,5 +34,4 @@ export class FooterComponent implements OnInit {
       "https://github.com/dnyaneshwargiri/dnyaneshwargiri.github.io",
     portfolioText: "Fork This Portfolio on Github",
   };
-  ngOnInit() {}
 }

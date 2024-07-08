@@ -26,8 +26,6 @@ export class ProjectsComponent implements OnInit {
 
       const GITHUB_USER = "dnyaneshwargiri";
       const GITHUB_URL = "https://api.github.com/users/";
-
-      // Rest of your script goes here...
     };
 
     script.onerror = (error: Error) => {

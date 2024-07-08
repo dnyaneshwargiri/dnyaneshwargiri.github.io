@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { MenuOptions } from "../../types/models";
 
 @Component({
@@ -9,38 +9,26 @@ import { MenuOptions } from "../../types/models";
   styleUrls: ["./navigationmenu.component.css"],
   standalone: true,
 })
-export class NavigationMenuComponent implements OnInit {
-  constructor() {}
+export class NavigationMenuComponent {
   isMenuOpen: boolean = false;
   menuOptions: MenuOptions[] = [
     {
       value: "Youtube",
-      route: "",
+      route: "https://www.youtube.com/@brogrammers?sub_confirmation=1",
       svgSrc: "../../../assets/svg/social/youtube.svg",
     },
     {
       value: "Github",
-      route: "",
+      route: "https://github.com/dnyaneshwargiri",
       svgSrc: ".../../../assets/svg/social/github.svg",
     },
     {
-      value: "Gallery",
-      route: "",
-      svgSrc: "../../../assets/svg/gallery.svg",
-    },
-    {
       value: "Testimonials",
-      route: "",
+      route: "https://topmate.io/dnyaneshwar_giri#testimonials",
       svgSrc: "../../../assets/svg/projects.svg",
-    },
-    {
-      value: "Blogs",
-      route: "",
-      svgSrc: "../../../assets/svg/blog.svg",
     },
   ];
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
-  ngOnInit() {}
 }
