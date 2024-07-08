@@ -15,11 +15,13 @@
       <h1 class="mb-4 text-2xl font-bold md:text-4xl">
         {{ title }}
       </h1>
-      <p class="text-align-last-left mb-4 text-lg md:text-base">
+      <p
+        class="text-align-last-left mb-4 text-lg text-neutral-500 md:text-base"
+      >
         {{ introParagraph }}
       </p>
       <button
-        class="bottom-0 flex items-start gap-1 rounded-full border-2 border-dny-red px-2 py-1 text-black"
+        class="bottom-0 flex items-start gap-1 rounded-full border-2 border-dny-red px-2 py-1 text-neutral-500"
         (click)="gotoLinkedIn()"
       >
         {{ introductionSectionConnectText }}
