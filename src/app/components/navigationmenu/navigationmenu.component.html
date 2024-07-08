@@ -1,0 +1,62 @@
+<header
+  class="fixed top-0 z-50 flex w-full flex-wrap bg-white py-4 text-sm sm:flex-nowrap sm:justify-start dark:bg-neutral-800"
+>
+  <nav
+    class="mx-auto w-full max-w-[85rem] px-4 sm:flex sm:items-center sm:justify-between"
+    aria-label="Global"
+  >
+    <div class="flex items-center justify-between">
+      <a class="flex-none" href="#">
+        <img
+          class="h-auto w-10"
+          src="../../../assets/img/logo/logo.png"
+          alt="Logo"
+        />
+      </a>
+      <div class="sm:hidden">
+        <button
+          type="button"
+          (click)="toggleMenu()"
+          class="hs-collapse-toggle mr-4 inline-flex items-center justify-center gap-x-2 disabled:pointer-events-none"
+          data-hs-collapse="#navbar-image-2"
+          aria-controls="navbar-image-2"
+          aria-label="Toggle navigation"
+        >
+          <img
+            *ngIf="isMenuOpen"
+            src="../../../assets/svg/close-svgrepo-com.svg"
+            alt=""
+            height="24px"
+            width="24px"
+          />
+          <img
+            *ngIf="!isMenuOpen"
+            src="../../../assets/svg/menu-alt-01-svgrepo-com.svg"
+            alt=""
+            height="24px"
+            width="24px"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      id="navbar-image-2"
+      [ngClass]="{ hidden: !isMenuOpen, block: isMenuOpen }"
+      class="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 sm:block"
+    >
+      <div
+        class="mt-5 flex flex-col gap-5 sm:mt-0 sm:flex-row sm:items-end sm:justify-end sm:ps-5"
+      >
+        <a
+          *ngFor="let option of menuOptions"
+          class="mr-4 inline-flex justify-end gap-1 text-lg font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
+          [href]="option.route"
+          target="_blank"
+        >
+          {{ option.value }}
+          <img [src]="option.svgSrc" alt="" height="20px" width="20px" />
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
