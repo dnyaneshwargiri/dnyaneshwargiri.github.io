@@ -3,7 +3,6 @@ import { ExperienceComponent } from "../experience/experience.component";
 import { IntroductionComponent } from "../introduction/introduction.component";
 import { TestimonialsComponent } from "../testimonials/testimonials.component";
 import { MoreArrowDownComponent } from "../widgets/more-arrow-down/more-arrow-down.component";
-import { ProjectsComponent } from "../projects/projects.component";
 
 @Component({
   selector: "main-application",
@@ -15,7 +14,6 @@ import { ProjectsComponent } from "../projects/projects.component";
     ExperienceComponent,
     TestimonialsComponent,
     MoreArrowDownComponent,
-    ProjectsComponent,
   ],
 })
 export class MainApplicationComponent {}

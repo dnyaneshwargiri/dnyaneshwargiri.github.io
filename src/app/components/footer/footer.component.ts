@@ -13,6 +13,7 @@ export class FooterComponent {
   footerData: FooterData = {
     title: "Living | Working | Leveling Up",
     subTitle: "Need help? I'm available :)",
+
     socials: [
       {
         key: "youtube",
@@ -31,7 +32,7 @@ export class FooterComponent {
       linkedIn: "https://www.linkedin.com/in/dnyaneshwargiri/",
     },
     portfolioGithubLink:
-      "https://github.com/dnyaneshwargiri/dnyaneshwargiri.github.io",
+      "https://github.com/dnyaneshwargiri/dnyaneshwargiri.github.io/tree/main",
     portfolioText: "Fork This Portfolio on Github",
   };
 }
