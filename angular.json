@@ -91,6 +91,25 @@
           "options": {
             "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/dnyaneshwargiri.github.io/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.json"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "browserTarget": "dnyaneshwargiri.github.io:build:production",
+            "serverTarget": "dnyaneshwargiri.github.io:server:production",
+            "routes": ["/"]
+          }
         }
       }
     }
