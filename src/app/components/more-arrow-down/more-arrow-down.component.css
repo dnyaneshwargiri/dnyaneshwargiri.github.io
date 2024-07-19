@@ -1,8 +1,0 @@
-#scroll-arrow {
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.hidden {
-  display: none;
-}
