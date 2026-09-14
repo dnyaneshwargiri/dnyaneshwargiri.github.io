@@ -9,28 +9,30 @@
         <ol
           class="border-s border-neutral-300 md:flex md:justify-center md:gap-6 md:border-s-0 md:border-t dark:border-neutral-500"
         >
-          <li *ngFor="let experience of experiences">
-            <div
-              class="flex-start flex min-w-[300px] items-center pt-2 md:block md:pt-0"
-            >
+          @for (experience of experiences; track experience) {
+            <li>
               <div
-                class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 md:-mt-[5px] md:me-0 md:ms-0 dark:bg-neutral-500"
-              ></div>
-              <p class="mt-2 text-sm text-neutral-500 dark:text-neutral-300">
-                {{ experience.tenure }} {{ experience.company }}
-              </p>
-            </div>
-            <div class="ms-4 mt-2 pb-5 text-justify md:ms-0">
-              <h4 class="mb-1.5 text-xl font-semibold">
-                {{ experience.jobRole }}
-              </h4>
-              <p
-                class="text-align-last-left mb-3 text-neutral-500 dark:text-neutral-300"
+                class="flex-start flex min-w-[300px] items-center pt-2 md:block md:pt-0"
               >
-                {{ experience.jobDescription }}
-              </p>
-            </div>
-          </li>
+                <div
+                  class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 md:-mt-[5px] md:me-0 md:ms-0 dark:bg-neutral-500"
+                ></div>
+                <p class="mt-2 text-sm text-neutral-500 dark:text-neutral-300">
+                  {{ experience.tenure }} {{ experience.company }}
+                </p>
+              </div>
+              <div class="ms-4 mt-2 pb-5 text-justify md:ms-0">
+                <h3 class="mb-1.5 text-xl font-semibold">
+                  {{ experience.jobRole }}
+                </h3>
+                <p
+                  class="text-align-last-left mb-3 text-neutral-500 dark:text-neutral-300"
+                >
+                  {{ experience.jobDescription }}
+                </p>
+              </div>
+            </li>
+          }
         </ol>
       </div>
     </div>

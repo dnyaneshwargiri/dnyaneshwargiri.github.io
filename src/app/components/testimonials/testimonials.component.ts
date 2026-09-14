@@ -1,14 +1,14 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Testimonial } from "../../types/models";
-import { CommonModule } from "@angular/common";
+
 import { SectionTitleComponent } from "../widgets/section-title/section-title.component";
 
 @Component({
   selector: "testimonials",
   templateUrl: "./testimonials.component.html",
   styleUrls: ["./testimonials.component.css"],
-  standalone: true,
-  imports: [CommonModule, SectionTitleComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [SectionTitleComponent],
 })
 export class TestimonialsComponent {
   title = "Testimonials";

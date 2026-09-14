@@ -1,11 +1,15 @@
 import { CommonModule } from "@angular/common";
-import { Component, HostListener } from "@angular/core";
+import {
+  Component,
+  HostListener,
+  ChangeDetectionStrategy,
+} from "@angular/core";
 
 @Component({
   selector: "more-arrow-down",
   templateUrl: "./more-arrow-down.component.html",
   styleUrls: ["./more-arrow-down.component.css"],
-  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule],
 })
 export class MoreArrowDownComponent {

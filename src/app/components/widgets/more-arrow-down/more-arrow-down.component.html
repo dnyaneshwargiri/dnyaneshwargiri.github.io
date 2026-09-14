@@ -1,7 +1,9 @@
-<div
+<button
+  type="button"
   id="scroll-arrow"
   class="fixed bottom-4 left-1/2 -translate-x-1/2 transform"
   [ngClass]="{ hidden: !showScrollArrow }"
+  aria-label="Scroll down"
   (click)="scrollToBottom()"
 >
   <svg
@@ -18,4 +20,4 @@
       d="M19 14l-7 7m0 0l-7-7m7 7V3"
     ></path>
   </svg>
-</div>
+</button>

@@ -1,13 +1,13 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { MenuOptions } from "../../types/models";
 
 @Component({
   selector: "navigation-menu",
   imports: [CommonModule],
   templateUrl: "./navigationmenu.component.html",
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ["./navigationmenu.component.css"],
-  standalone: true,
 })
 export class NavigationMenuComponent {
   isMenuOpen: boolean = false;

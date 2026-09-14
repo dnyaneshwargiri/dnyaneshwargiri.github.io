@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { ExperienceComponent } from "../experience/experience.component";
 import { IntroductionComponent } from "../introduction/introduction.component";
 import { TestimonialsComponent } from "../testimonials/testimonials.component";
@@ -8,7 +8,7 @@ import { MoreArrowDownComponent } from "../widgets/more-arrow-down/more-arrow-do
   selector: "main-application",
   templateUrl: "./main-application.component.html",
   styleUrls: ["./main-application.component.css"],
-  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     IntroductionComponent,
     ExperienceComponent,

@@ -1,13 +1,12 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { FooterData } from "../../types/models";
-import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-footer",
   templateUrl: "./footer.component.html",
   styleUrls: ["./footer.component.css"],
-  imports: [CommonModule],
-  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [],
 })
 export class FooterComponent {
   footerData: FooterData = {

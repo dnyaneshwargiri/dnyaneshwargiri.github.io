@@ -4,15 +4,17 @@
 
 @font-face {
   font-family: "playwrite";
-  src: url("./assets/fonts/Playwrite/PlaywriteRegular.woff") format("woff2");
+  src: url("./assets/fonts/Playwrite/PlaywriteRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "poppins";
-  src: url("./assets/fonts/Poppins/Poppins-Regular.woff") format("woff2");
+  src: url("./assets/fonts/Poppins/Poppins-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 body {
   font-family: "poppins", sans-serif;
