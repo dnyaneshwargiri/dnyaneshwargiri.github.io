@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dnyaneshwargiri.github.io/sitemap.xml
