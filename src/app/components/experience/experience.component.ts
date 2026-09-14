@@ -14,7 +14,7 @@ export class ExperienceComponent {
   title = "Work";
   experiences: Experience[] = [
     {
-      jobRole: "Senior Frontend Engineer",
+      jobRole: "Senior Software Engineer",
       tenure: "2023-Present",
       company: "Foxbase GmbH",
       location: "Dusseldorf, Germany",
