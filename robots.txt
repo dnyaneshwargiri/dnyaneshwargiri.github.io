@@ -1,4 +1,6 @@
+# Allow all major search engine crawlers to index the site
 User-agent: *
 Allow: /
 
+# Link to your XML Sitemap to speed up discovery
 Sitemap: https://dnyaneshwargiri.github.io/sitemap.xml
